@@ -1,0 +1,120 @@
+/* * {
+    border: dashed red 1px !important;
+} */
+
+.container {
+    background-color: #edf6f9; 
+    width: 600;   
+    margin-left: auto;
+    margin-right:auto;
+    padding: 10px;
+    padding-top:0px;
+    
+
+
+
+
+}
+
+.bg{
+    background-color: #83c5be;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 50px;
+    scroll-padding-left: auto;
+    scroll-padding-right: auto;
+
+
+
+}
+
+
+html, body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+    border: none;
+}
+
+#first-row {
+    padding-top: 80px;
+}
+ 
+#mynavigation {
+    background-color: #02838f!important;
+}
+
+#face {
+    background-image: url("photobooth_lindsay copy.jpg");
+    width: 180px;
+    height: 180px;
+    border-radius: 3%;
+
+    background-size: cover;
+    background-position-x:center;
+    background-position-y:center;
+
+  }
+  #material-symbols-outlined{
+    color: hotpink;
+
+  }
+
+  .carousel-item{
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin-left: 300px;
+    margin-right: 300px;
+
+    text-align:center;
+    width: 50%;
+    padding: 10px;
+
+    background-size: cover;
+    background-position-x:center;
+    background-position-y:center;
+
+
+  }
+
+
+
+
+
+  
+  p, h5 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+h1,h2 {
+  font-family: "Arima", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  }
+
+  
+
+
+  /* image and text side by side */
+ /*.container {
+    display:flex;
+  }
+  
+  .left {
+    width:200px;
+  }
+
+  .right {
+    flex-grow: 1;
+  }
+
+
+  a:hover {
+    background-color:#83c5be;
+    font-size: 18px;
+  }
+*/
