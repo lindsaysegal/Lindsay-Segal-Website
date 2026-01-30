@@ -1,0 +1,774 @@
+
+
+
+html,
+        body {
+            margin: 0;
+            background-color:rgb(166, 56, 56) ;
+        }
+    
+        .section {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+
+        .sectionclock {
+          min-height: 100vh;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          
+
+      }
+
+      .section1 {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        
+
+    }
+
+    .sectiontrack {
+      display: flex; 
+      flex-direction: column; 
+      align-items: center;
+      justify-content: center; 
+      min-height: 100vh;
+      background-image: url('track_pixel.png');
+    }
+    canvas {
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0; 
+    }
+    
+        .red {
+            background-color: rgb(166, 56, 56);
+            color: ivory;
+                }
+
+                .red1 {
+                  background-color: rgb(128, 44, 44);
+                  color: ivory;
+                      }
+    
+        .blue {
+            background-color: rgb(80, 100, 200);
+            color: ivory;
+        }
+    
+        .green {
+            background-color: rgb(80, 200, 100);
+            color: yellow;
+        }
+    
+        #vp{
+            opacity: 0;
+        }
+
+        .rubik-80s-fade-regular {
+        font-family: "Rubik 80s Fade", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size:large;
+        }
+
+        .bungee-tint-regular {
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: green;
+}
+
+.jersey-20-regular {
+  font-family: "Jersey 20", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+
+}
+
+
+
+.subtitle {
+font-size:55px;
+}
+
+@font-face {
+    font-family: "Super-Mario-World";
+    src: 
+         url("fonts/Super-Mario-World.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: "Pixellari";
+    src: 
+         url("fonts/Pixellari.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.MarioFont {
+    font-family: "Super-Mario-World", sans-serif; 
+  }
+
+  .MarioFont1 {
+    font-family: "Super-Mario-World", sans-serif; 
+    font-size: 30px;
+  }
+
+  .MarioFontTitle {
+    font-family: "Super-Mario-World", sans-serif; 
+    font-size: 100px;
+
+  }
+
+  .MarioFontTitle2 {
+    font-family: "Super-Mario-World", sans-serif; 
+    font-size: 50px;
+
+  }
+
+  .MarioFontBolt {
+    font-family: "Super-Mario-World", sans-serif; 
+    font-size: 50px;
+
+  }
+
+  .MarioFontTrack {
+    font-family: "Super-Mario-World", sans-serif; 
+    font-size: 50px;
+    color:ivory;
+  }
+
+  .PixellariParagraph {
+    font-family: "Pixellari", sans-serif; 
+    font-size: 25px;
+
+  }
+
+
+  .Pixellari_Table {
+    font-family: "Pixellari", sans-serif; 
+    font-size: 25px;
+  }
+
+  .Pixellari{
+    font-family: "Pixellari", sans-serif; 
+    font-size: 30px;
+  }
+
+  .PixellariClockPage {
+    font-family: "Pixellari", sans-serif; 
+    font-size: 40px;
+  }
+
+  
+
+
+
+
+
+
+
+
+.table-container {
+            width: 80%;
+            margin:10px;
+            border-collapse: collapse;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: "Pixellari";
+             min-width: 400px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+        }
+
+        th, td {
+            text-align: center;
+            border: 1px solid #000000;
+            color:black;
+            padding: 5px 10px;
+        }
+        
+
+        th {
+            background-color: rgb(88, 150, 215);
+            color: black;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dadada;
+        }
+
+
+        .fly-in {
+            transform: translateX(-100%); 
+            opacity: 0; 
+            transition: all 0.3s ease;
+          }
+
+
+.blue-center{
+    margin-left: 10;
+    margin-right: 10;
+    margin-top:10;
+    margin-top:10;
+    height: 115;
+
+}
+
+
+.shoe_left{
+    width: 250px; 
+    height:250px;
+    position: relative;
+    right: 100px; /* Adjust the value as needed */
+    top: -500px;
+    transform: translateY(50px);
+}
+
+.shoe_right{
+    width: 250px; 
+    height:250px;
+    position: relative;
+    left: 100px; /* Adjust the value as needed */
+    top: -460px;
+    transform: rotateY(180deg)
+
+}
+
+.trophy_left{
+  width: 250px; 
+  height:250px;
+  position: relative;
+  right: 0px; /* Adjust the value as needed */
+  top: -400px;
+
+
+}
+
+
+
+
+.trophy_right{
+  width: 250px; 
+  height:250px;
+  position: relative;
+  left: 0px; /* Adjust the value as needed */
+  top: -400px;
+
+
+}
+
+.image-container-trophy {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+  max-width: 1200px; 
+}
+
+.image-container-shoes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    max-width: 1200px; 
+  }
+
+.borderBolt{
+  width: auto; 
+  height: auto;
+    padding: 10px;
+    background-color: transparent; 
+    text-align: center;
+    border: 8px dashed rgba(0, 0, 0, 0.2); 
+  }
+
+  .border2{
+  
+    width: 80%; 
+    height: 50%;
+      padding: 10px;
+      background-color: transparent; 
+      text-align: center;
+      border: 8px dashed rgba(0, 0, 0, 0.2); 
+    }
+
+    .borderfinish{
+  
+      width: auto; 
+      height: 50%;
+        padding: 1px;
+        background-color: transparent; 
+        text-align: center;
+        border: 8px dashed rgba(80, 100, 200, 0.6); 
+        color:ivory;
+      }
+
+      .bordertrack{
+  
+        width: auto; 
+        height: 50%;
+          padding: 1px;
+          background-color: transparent; 
+          text-align: center;
+          border: 8px dashed rgba(255, 200, 56, 0.6); 
+          color:ivory;
+        }
+
+    .twohundred{
+      position: relative;
+            top: -120px; 
+            right: 250px; 
+
+
+
+      }
+
+      .onehundred{
+        position: relative;
+              top: 280px; 
+              right: 190px; 
+  
+  
+  
+        }
+
+        .fourhundred{
+          position: relative;
+                top: 100px; 
+                right: -250px; 
+    
+          }
+
+          .finish{
+            position: relative;
+                  top: 120px; 
+                  right: -210px; 
+      
+            }
+            .marking{
+              position: relative;
+              top: -150px; 
+                  right: -10px; 
+      
+
+        
+              }
+  .first-text1 {
+  width: 50%; 
+    padding: 50px;
+    background-color: transparent; 
+    text-align: center;
+    border: 8px dashed rgba(0, 0, 0, 0.2); 
+  }
+
+      
+
+
+
+  .spacer {
+    height: 100vh; 
+  }
+
+  .space1blue {
+    height: 25vh; 
+    background-color: rgb(80, 100, 200); 
+  }
+
+  
+  
+  .clock {
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(80, 100, 200);
+    -webkit-text-stroke: .02px;
+    -webkit-text-stroke-color: ivory;
+    text-align: center;
+
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .clock.visible {
+    opacity: 1;
+  }
+  
+
+
+  .race {
+    display: flex;
+    justify-content: center;
+}
+
+
+.mini_section {
+    min-height: 15vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(166, 56, 56);
+    
+
+}
+
+
+.mini {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(166, 56, 56);
+    
+
+}
+
+
+.section_race {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+
+    .border {
+        width: 80%; 
+        height: auto;
+        padding: 10px;
+        background-color: transparent; 
+        text-align: center;
+        border-radius: 50px; 
+        border: 5px solid rgba(0, 0, 0, 0.2); 
+    
+        position: relative; 
+    
+        background: radial-gradient(circle, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    
+        box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1), 
+                     0 0 0 10px rgba(0, 0, 0, 0.1), 
+                     0 0 0 15px rgba(0, 0, 0, 0.1); 
+            
+      }
+
+
+      #target {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+
+
+  .container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+.text{
+  font-weight: 100;
+  font-size: 28px;
+  color: #FAFAFA;
+
+}
+.dud{
+  color: #757575;
+}
+
+@font-face {
+  font-family: 'Pixellari';
+  src: url('./fonts/Pixellari.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Super-Mario-World';
+  src: url('./fonts/Super-Mario-World.ttf') format('truetype');
+}
+
+
+
+
+
+
+.containerVideoTitle {
+	width: 100%;
+	margin: auto;
+	font-weight: 900;
+	text-align: center;
+  font-family: "Super-Mario-World", sans-serif; 
+  font-size: 50px;
+}
+
+/*.take-input {
+  margin: 50px 0 0;
+}
+
+.take-input input {
+  width: 400px;
+  height: 35px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #ececec;
+  margin: 0 15px 0 0;
+  font-size: 15px;
+}*/
+
+
+
+.animate {
+	font-size: 50px;
+}
+
+.animate span {
+	display: inline-block;
+}
+
+
+
+
+
+.animate span:nth-of-type(2) {
+	animation-delay: .05s;
+}
+.animate span:nth-of-type(3) {
+	animation-delay: .1s;
+}
+.animate span:nth-of-type(4) {
+	animation-delay: .15s;
+}
+.animate span:nth-of-type(5) {
+	animation-delay: .2s;
+}
+.animate span:nth-of-type(6) {
+	animation-delay: .25s;
+}
+.animate span:nth-of-type(7) {
+	animation-delay: .3s;
+}
+.animate span:nth-of-type(8) {
+	animation-delay: .35s;
+}
+.animate span:nth-of-type(9) {
+	animation-delay: .4s;
+}
+.animate span:nth-of-type(10) {
+	animation-delay: .45s;
+}
+.animate span:nth-of-type(11) {
+	animation-delay: .5s;
+}
+.animate span:nth-of-type(12) {
+	animation-delay: .55s;
+}
+.animate span:nth-of-type(13) {
+	animation-delay: .6s;
+}
+.animate span:nth-of-type(14) {
+	animation-delay: .65s;
+}
+.animate span:nth-of-type(15) {
+	animation-delay: .7s;
+}
+.animate span:nth-of-type(16) {
+	animation-delay: .75s;
+}
+.animate span:nth-of-type(17) {
+	animation-delay: .8s;
+}
+.animate span:nth-of-type(18) {
+	animation-delay: .85s;
+}
+.animate span:nth-of-type(19) {
+	animation-delay: .9s;
+}
+.animate span:nth-of-type(20) {
+	animation-delay: .95s;
+}
+.animate span:nth-of-type(21) {
+	animation-delay: 1s;
+}
+.animate span:nth-of-type(22) {
+	animation-delay: 1.05s;
+}
+.animate span:nth-of-type(23) {
+	animation-delay: 1.1s;
+}
+.animate span:nth-of-type(24) {
+	animation-delay: 1.15s;
+}
+.animate span:nth-of-type(25) {
+	animation-delay: 1.2s;
+}
+.animate span:nth-of-type(26) {
+	animation-delay: 1.25s;
+}
+.animate span:nth-of-type(27) {
+	animation-delay: 1.3s;
+}
+.animate span:nth-of-type(28) {
+	animation-delay: 1.35s;
+}
+
+
+/* Animation Three */
+
+.three span {
+	color: ivory;
+	opacity: 0;
+	transform: translate(-300px, 0) scale(0);
+	animation: sideSlide .5s forwards;
+}
+
+@keyframes sideSlide {
+	60% {
+		transform: translate(20px, 0) scale(1);
+		color: ivory;
+	}
+
+	80% {
+		transform: translate(20px, 0) scale(1);
+		color: rgb(80, 100, 200);
+	}
+
+	99% {
+		transform: translate(0) scale(1.2);
+		color: rgb(80, 100, 200);
+	}
+
+	100% {
+		transform: translate(0) scale(1);
+		opacity: 1;
+		color: ivory;
+	}
+}
+
+
+
+
+.center {
+  display: flex-end;
+  align-items: flex-end;
+  justify-content: center; 
+}  
+
+loader {
+  display: flex;
+  flex-direction: row;
+}
+
+watch {
+  width: 200px;
+  height: 200px;
+  background-image: url('stopwatch_pixel.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  animation: 1.75s watchAnim infinite;
+  position: relative;
+  transform: translateY(60%);
+}
+
+watch:nth-child(1) {
+  background-image: url('stopwatch_pixel.png');
+  animation-delay: 1s;
+}
+watch:nth-child(2) {
+  background-image: url('stopwatch_pixel.png');
+  animation-delay: 1.2s;
+}
+watch:nth-child(3) {
+  background-image: url('stopwatch_pixel.png');
+  animation-delay: 1.4s;
+}
+
+watch:nth-child(4) {
+  background-image: url('stopwatch_pixel.png');
+  animation-delay: 1.6s;
+}
+watch:nth-child(5) {
+  background-image: url('stopwatch_pixel.png');
+  animation-delay: 1.8s;
+}
+
+@keyframes watchAnim {
+  0% {top: 0;}
+  25% {top: -20px;}
+  50% {top: 0};
+  100% {top: 0};
+}
+
+
+
+/* Class notes have font size in em or rem, and change HTML to a background color 
+
+
+can have youtube start self in embed thing add n% rel=0 will prevent showing related videos
+and can get auto start, set parameters
+
+add particles in trophy and timing
+make someone running
+
+
+
+*/
+
+
+
+.custom-btn {
+  display: inline-block;
+  font-family: 'Pixellari', sans-serif; 
+  font-size: 2rem;
+  color: ivory; 
+  background-color: rgb(166, 56, 56);
+  border: 5px dashed rgba(0, 0, 0, 0.2); 
+  padding: 10px 20px; 
+  border-radius: 8px; 
+  text-decoration: none; 
+  transition: all 0.3s ease; 
+}
+
+.custom-btn:hover {
+  background-color: rgb(88, 150, 215); 
+  color: ivory; 
+  transform: scale(1.1); /* grow */
+}
+
+.custom-btn:active {
+  transform: scale(0.95); 
+}
